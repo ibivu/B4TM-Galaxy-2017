@@ -88,5 +88,5 @@ Or try the following command outside the Galaxy instance to reboot Galaxy (donâ€
 $ docker exec b4tm2017 supervisorctl restart galaxy:
 ```
 
-Please do all the tests. If your group is confronted with difficulties, please let us know before the
-end of 19 Apr 2017.
+Please do all the tests. If your group is confronted with difficulties, please let us know by either [submitting an issue](https://github.com/ibivu/B4TM-Galaxy-2017/issues/new) in this Github repo or talking to us.
+
