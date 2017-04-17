@@ -18,11 +18,11 @@ There are two Galaxy instances running on the cloud. Please click here to sign u
 
 Please refer to [this](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker), which will handhold you through the preparation.
 
-### **Issues and discussion**
+### Issues and discussion
 
 Outside the practicals, you may submit your issues via [Github](https://github.com/ibivu/B4TM-Galaxy-2017/issues) and we will reply to you as soon as possible. To expedite the solution, everybody is encouraged to join the discussion in [Github](https://github.com/ibivu/B4TM-Galaxy-2017/issues), so that many of the questions may have been answered before we reply.
 
-## **Part 1**: run a workflow in Galaxy
+## Part 1: run a workflow in Galaxy
 
 ### Setup
 
@@ -37,5 +37,39 @@ In this part, you are required to:
 It may take more than 24 hours to run this workflow.
 
 For this part, you need to hand in:
-1. A screenshot of the workflow.
-2. A visualisation of the workflow output.
+1. a screenshot of the workflow.
+2. a visualisation of the workflow output.
+
+## Part 2: develop tools and a workflow for Galaxy
+
+Actually in the first part, we designate some random values for parameters  and , which will not make any sense.  and  come from BUM model [2](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf), therefore we need to run this statistical model to approximate the parameters. However, in the current Galaxy workflow, there is no such a tool, you need to develop it.
+
+### Setup
+
+To set up a local Galaxy instance, [this document](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker) will handhold you through the procedure.
+
+To save the troubles of registering an administrator account, you can log in to this Galaxy instance using 'admin@galaxy.org' as the account and ‘admin’ as the password.
+
+### To-do list
+
+In this part, you are required to:
+1. log in to the Galaxy instance and install DESeq (iuc).
+2. replace DESeq R script (deseq2.R) in the folder ‘shed_tools’ with the bespoke one provided.
+3. finish the Galaxy tool of BUM model (xml file).
+4. recreate a workflow that can be run automatically from the beginning to the end.
+5. run the workflow and visualise the output.
+
+For this part, you need to hand in:
+1. an XML file and the output file of BUM model.
+2. a screenshot of the new workflow.
+3. a visualisation of the workflow output.
+
+## Submit your assignment
+
+Please prepare everything into a PDF document, where you name, email, student No. should be clearly mentioned. The document should be structured and self-contained.
+
+The whole XML file should appear in the document with your code highlighted.
+
+The file name of the document has to be ‘groupXX.pdf’ (e.g. group03.pdf).
+
+The document will be submitted via Blackboard by the end of **8 May 2017**
