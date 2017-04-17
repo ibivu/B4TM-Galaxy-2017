@@ -68,7 +68,7 @@ For this part, you need to hand in:
 
 Please prepare everything into a PDF document, where you name, email, student No. should be clearly mentioned. The document should be structured and self-contained.
 
-The whole XML file should appear in the document with your code highlighted.
+The whole XML file should appear in the document **in a code style with your code highlighted**.
 
 The file name of the document has to be ‘groupXX.pdf’ (e.g. group03.pdf).
 
