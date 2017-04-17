@@ -31,7 +31,7 @@ Please create a user account in your Galaxy instance on the cloud. Each team has
 ### To-do list
 In this part, you are required to:
 1. import the workflow from the given Galaxy workflow file.
-2. run this workflow on the dataset given, using the parameters =0.5, =0.3, and FDR from  (May et al. 2016)
+2. run this workflow on the dataset given, using the parameters $\alpha=0.5$, $\lambda=0.3$, and FDR from  (May et al. 2016)
 3. visualise the output of workflow.
 
 It may take more than 24 hours to run this workflow.
@@ -42,7 +42,7 @@ For this part, you need to hand in:
 
 ## Part 2: develop tools and a workflow for Galaxy
 
-Actually in the first part, we designate some random values for parameters  and , which will not make any sense.  and  come from BUM model [2](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf), therefore we need to run this statistical model to approximate the parameters. However, in the current Galaxy workflow, there is no such a tool, you need to develop it.
+Actually in the first part, we designate some random values for parameters  and , which will not make any sense.  and  come from BUM model [[2]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf), therefore we need to run this statistical model to approximate the parameters. However, in the current Galaxy workflow, there is no such a tool, you need to develop it.
 
 ### Setup
 
