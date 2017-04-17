@@ -62,6 +62,8 @@ to type the username and password.
 
 `$ docker run -d -p 8888:80 --name b4tm2017 -v /your_directory/:/export/ docker.bioinformatician.science:5678/b4tm/local:0.1`
 
+In this command, we run this docker container in a detached mode, mapping the container port 80 to the port 8888 of localhost, naming this instance as 'b4tm2017' and mapping a container directory to a local one. 
+
 Before run this command, please designate a path on your computer to replace ‘your_directory’ in the command.
 For linux users, you might use ‘sudo’ if your username is not in docker group. 
 
@@ -76,13 +78,13 @@ Please visit the URL http://127.0.0.1:8888 to test whether Galaxy is accessible 
 
 To log in to the Galaxy instance as a root user, please use the command line `$ docker exec -it b4tm2017 /bin/bash`
 
-Please try the following command inside Galaxy instance to reboot Galaxy (don’t forget the colon at the end).
+Please try the following command inside Galaxy instance to reboot Galaxy without rebooting the container (don’t forget the colon at the end).
 
 ```
 $ supervisorctl restart galaxy:
 ```
 
-Or try the following command outside the Galaxy instance to reboot Galaxy (don’t forget the colon at the end)).
+Or try the following command outside the Galaxy instance to reboot Galaxy without rebooting the container (don’t forget the colon at the end)).
 
 ```
 $ docker exec b4tm2017 supervisorctl restart galaxy:
