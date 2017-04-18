@@ -1,4 +1,8 @@
 # Instruction
 
-This folder contains all the input files you need to run the workflow. For how to use these data, please refer
+This folder contains all the input datasets you need to run the workflow. 
+
+`edges.txt` is contains the edges that will be used as the input of Heinz (the tool at the end of the workflow). The rest are the datasets of dental caries (DC), which consist of supragingival plague samples from 36 individuals who had either a caries-positive (CP) or caries-negative (CN) oral health profile.
+
+For more details of these datasets, please refer
 to [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/metaModules.pdf).
