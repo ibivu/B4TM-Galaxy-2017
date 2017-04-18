@@ -1,6 +1,6 @@
 # Assignment Instruction
 
-In this assignment, you will play and tweak with Galaxy workflows as both a user and a developer. This is a group assignment with a maximum of 2 students in each group.
+In this assignment, you will play and tweak with Galaxy workflows as both users and developers. This is a group assignment with a maximum of 2 students in each group.
 
 In the first part of the assignment, you will run a Galaxy workflow as the end users by importing the workflows and tweaking the parameters; in the second part, you became developers and administrators of Galaxy: you will develop a new Galaxy tool, install and modify another tool and create a workflow. After finishing this assignment, you will be familiar with Galaxy from different perspectives.
 
@@ -52,8 +52,8 @@ You need to register an account in this Galaxy instance and then make it the adm
 
 In this part, you are required to:
 1. log in to the Galaxy instance and install DESeq (iuc).
-2. replace DESeq R script (deseq2.R) in the folder ‘shed_tools’ with the bespoke one provided.
-3. finish the Galaxy tool of BUM model (xml file).
+2. replace DESeq R script (deseq2.R) in the folder `shed_tools` with the bespoke one provided.
+3. finish the Galaxy tool of BUM model (xml file) in the folder `galaxy-central/tools/bionet`.
 4. recreate a workflow that can be run automatically from the beginning to the end.
 5. run the workflow and visualise the output.
 
