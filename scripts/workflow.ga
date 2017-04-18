@@ -1,0 +1,269 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "Task1", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset Collection"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset collection", 
+            "outputs": [], 
+            "position": {
+                "left": 201.09375, 
+                "top": 309.1328125
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"collection_type\": \"list\", \"name\": \"Input Dataset Collection\"}", 
+            "tool_version": null, 
+            "type": "data_collection_input", 
+            "uuid": "f087dd53-6955-4982-8bce-4cc93e1c96e6", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "df13010a-fe4e-4931-bca2-ed3329dfc916"
+                }
+            ]
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset Collection"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset collection", 
+            "outputs": [], 
+            "position": {
+                "left": 201.09375, 
+                "top": 394.1328125
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"collection_type\": \"list\", \"name\": \"Input Dataset Collection\"}", 
+            "tool_version": null, 
+            "type": "data_collection_input", 
+            "uuid": "be5c61fe-62e4-4b27-856e-4aa2d85fd723", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "b583d276-0e1a-480b-93a7-d2587c4afbae"
+                }
+            ]
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "ko_edges.txt"
+                }
+            ], 
+            "label": null, 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 233.09375, 
+                "top": 469.1328125
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"ko_edges.txt\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "363e4c32-be24-49c6-b885-2e804905ef53", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "d6fca0e0-f96c-4fce-8e77-b1b99a69e1de"
+                }
+            ]
+        }, 
+        "3": {
+            "annotation": "You probably need to change the parameters before running the workflow.", 
+            "content_id": "heinz_scoring", 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Calculate Heinz scores", 
+                    "name": "input1"
+                }
+            ], 
+            "label": null, 
+            "name": "Calculate Heinz scores", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 887.09375, 
+                "top": 298.1328125
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output1"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "heinz_scoring", 
+            "tool_state": "{\"input2\": \"\\\"0.3\\\"\", \"input_type\": \"{\\\"input3\\\": \\\"0.1\\\", \\\"input4\\\": \\\"0.1\\\", \\\"__current_case__\\\": 0, \\\"input_type_selector\\\": \\\"bum_type\\\"}\", \"__rerun_remap_job_id__\": null, \"input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "5cf2099d-2d7e-4c73-9f68-74730a7f5ffe", 
+            "workflow_outputs": []
+        }, 
+        "4": {
+            "annotation": "", 
+            "content_id": "deseq2", 
+            "id": 4, 
+            "input_connections": {
+                "rep_factorName_0|rep_factorLevel_0|countsFile": {
+                    "id": 0, 
+                    "output_name": "output"
+                }, 
+                "rep_factorName_0|rep_factorLevel_1|countsFile": {
+                    "id": 1, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "DESeq2", 
+            "outputs": [
+                {
+                    "name": "split_output", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "deseq_out", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "plots", 
+                    "type": "pdf"
+                }, 
+                {
+                    "name": "counts_out", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 519.09375, 
+                "top": 216.1328125
+            }, 
+            "post_job_actions": {
+                "HideDatasetActioncounts_out": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "counts_out"
+                }, 
+                "HideDatasetActiondeseq_out": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "deseq_out"
+                }, 
+                "HideDatasetActionplots": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "plots"
+                }, 
+                "HideDatasetActionsplit_output": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "split_output"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "deseq2", 
+            "tool_state": "{\"fit_type\": \"\\\"1\\\"\", \"__page__\": 0, \"tximport\": \"{\\\"tximport_selector\\\": \\\"count\\\", \\\"__current_case__\\\": 1}\", \"rep_factorName_0|rep_factorLevel_0|countsFile\": \"[{\\\"src\\\": \\\"hdca\\\", \\\"id\\\": 1}]\", \"rep_factorName_0|rep_factorLevel_1|countsFile\": \"[{\\\"src\\\": \\\"hdca\\\", \\\"id\\\": 2}]\", \"outlier_replace_off\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"auto_mean_filter_off\": \"\\\"false\\\"\", \"rep_factorName\": \"[{\\\"__index__\\\": 0, \\\"factorName\\\": \\\"condition\\\", \\\"rep_factorLevel\\\": [{\\\"__index__\\\": 0, \\\"factorLevel\\\": \\\"CP\\\", \\\"countsFile\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 1, \\\"factorLevel\\\": \\\"CN\\\", \\\"countsFile\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]}]\", \"normCounts\": \"\\\"false\\\"\", \"outlier_filter_off\": \"\\\"false\\\"\", \"many_contrasts\": \"\\\"false\\\"\", \"pdf\": \"\\\"false\\\"\", \"chromInfo\": \"\\\"/galaxy-central/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": "2.11.38", 
+            "type": "tool", 
+            "uuid": "2032e6ef-269e-4bdb-bfae-3875d5c22188", 
+            "workflow_outputs": []
+        }, 
+        "5": {
+            "annotation": "Due to the limited cloud resources, we just limit the number of CPU cores to 1.", 
+            "content_id": "heinz", 
+            "id": 5, 
+            "input_connections": {
+                "input2": {
+                    "id": 3, 
+                    "output_name": "output1"
+                }, 
+                "input3": {
+                    "id": 2, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Optimal maximum-scoring subnetworks", 
+                    "name": "input2"
+                }, 
+                {
+                    "description": "runtime parameter for tool Optimal maximum-scoring subnetworks", 
+                    "name": "input3"
+                }
+            ], 
+            "label": null, 
+            "name": "Optimal maximum-scoring subnetworks", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1114.09375, 
+                "top": 309.1328125
+            }, 
+            "post_job_actions": {
+                "EmailActionoutput1": {
+                    "action_arguments": {}, 
+                    "action_type": "EmailAction", 
+                    "output_name": "output1"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "heinz", 
+            "tool_state": "{\"input2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input3\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"input1\": \"\\\"1\\\"\", \"__page__\": 0}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "0affd12d-f881-4989-be60-9ef8c168e5bb", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output1", 
+                    "uuid": "c6a0561f-2658-4432-b736-783104ccdcea"
+                }
+            ]
+        }
+    }, 
+    "uuid": "ffb65b3e-38c6-42d5-8a4a-7a329cc4299f"
+}
