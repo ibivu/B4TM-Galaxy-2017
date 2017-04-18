@@ -19,11 +19,11 @@ stable version of docker.
 * [Docker for Mac (Older version might be glitchy)](https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac)
 * [Docker for Windows (Windows 10 Professional or Windows 10 Education)](https://docs.docker.com/docker-for-windows/install/)
 * [Docker for Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntu/)
-* [Other flavors of Linux](https://docs.docker.com/engine/installation/)
+* [Docker for other flavors of Linux](https://docs.docker.com/engine/installation/)
 
 ### Windows 10 Education
 
- If you have an VUnet ID, you can log in to [SURFspot](https://www.surfspot.nl/) to get a free serial key of Windows
+ If you have a VUnet ID, you can log in to [SURFspot](https://www.surfspot.nl/) to get a free serial key of Windows
  10 Education version, with which you can replace your old serial key in your Windows 10 Home to upgrade it to education version.
  
 ## Basics of using Docker
