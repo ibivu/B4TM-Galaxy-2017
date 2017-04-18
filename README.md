@@ -1,6 +1,6 @@
 # Assignment Instruction
 
-In this assignment, you will play and tweak with Galaxy workflows as both users and developers. This is a group assignment with a maximum of 2 students in each group.
+In this group assignment, you will play and tweak with Galaxy workflows as both users and developers.
 
 In the first part of the assignment, you will run a Galaxy workflow as the end users by importing the workflows and tweaking the parameters; in the second part, you became developers and administrators of Galaxy: you will develop a new Galaxy tool, install and modify another tool and create a workflow. After finishing this assignment, you will be familiar with Galaxy from different perspectives.
 
@@ -8,7 +8,7 @@ In the first part of the assignment, you will run a Galaxy workflow as the end u
 
 ### Make a team
 
-You need to form your team by enrolling a group on [Blackboard](https:://bb.vu.nl).
+You need to form your team by enrolling a group on [Blackboard](https:://bb.vu.nl). Each group consists of 2 students.
 
 ### Get the access to a Galaxy instance on the cloud
 
