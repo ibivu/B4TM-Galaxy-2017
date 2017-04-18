@@ -7,7 +7,7 @@ This assignment is a group assignment with a maximum of 2 persons in the group. 
 and in the second week, a local docker container is needed to finish the assignment. 
 
 Some of you might be confronted with difficulty in using docker image due to the factors like operating systems
-and stuff. If it is unsolvable, please consider choosing a collaborator who has no such problem to make a group.
+and stuff. If so, please let us know. If it is unsolvable, please consider choosing a collaborator who has no such problem to make a group.
 
 ## Install the latest version of Docker engine
 
@@ -23,12 +23,12 @@ stable version of docker.
 
 ### Windows 10 Education
 
- If you have VUnet ID, you can log into [SURFspot](https://www.surfspot.nl/) to get a free serial key of Windows
- 10 Edu, with which you can replace your old key in your Windows 10 Home to upgrade it to education version.
+ If you have an VUnet ID, you can log in to [SURFspot](https://www.surfspot.nl/) to get a free serial key of Windows
+ 10 Education version, with which you can replace your old serial key in your Windows 10 Home to upgrade it to education version.
  
 ## Basics of using Docker
 
- If you were previously enrolled in the master course ‘Structural Bioinformatics’, you may have gotten on with
+ If you were previously enrolled in the master course ‘Structural Bioinformatics’, you may have been familiar with
  Docker already, in this case, you may skip this section for the next. If you are new to Docker or want to
  review the usage of Docker quickly, you can read this document [here](https://docs.google.com/document/d/1QoL_93B-0VRcJdrxjweUV8JQI0Waehz1rMdiCFeWPeo/edit?usp=sharing).
  
@@ -42,7 +42,7 @@ docker images. In most cases, we just pull a docker image from a public registry
 docker registry.
 
 #### Why do we use a separate registry?
-In Galaxy assignment, a software package called CPLEX is used, which is proprietary not open source, therefore,
+In Galaxy assignment, a software package called CPLEX is used, which is proprietary, therefore,
 it limits the distribution of the software and we have to put it into a private docker registry.
 
 #### How to log in?
@@ -62,17 +62,17 @@ to type the username and password.
 
 `$ docker run -d -p 8888:80 --name b4tm2017 -v /your_directory/:/export/ docker.bioinformatician.science:5678/b4tm/local:0.1`
 
-In this command, we run this docker container in a detached mode, mapping the container port 80 to the port 8888 of localhost, naming this instance as 'b4tm2017' and mapping a container directory to a local one. 
+In this command, we run this docker container in a detached mode, mapping the container port 80 to the port 8888 of localhost, naming this instance as 'b4tm2017' and mapping a container directory to a local one.
 
-Before run this command, please designate a path on your computer to replace ‘your_directory’ in the command.
-For linux users, you might use ‘sudo’ if your username is not in docker group. 
+Before running this command, please designate a path on your computer to replace `your_directory` in the command.
+For linux users, you might use `sudo` if your linux user account is not in the Docker group. 
 
 ### Test the instance
 
-#### Test it in Browser
+#### Test it in the Internet browser
 
 Please visit the URL http://127.0.0.1:8888 to test whether Galaxy is accessible on your computer now
-(it might take a few minutes after executing the docker command). 
+(it might take a few minutes after executing the docker command above). 
 
 #### Test it in Docker
 
@@ -90,5 +90,5 @@ Or try the following command outside the Galaxy instance to reboot Galaxy withou
 $ docker exec b4tm2017 supervisorctl restart galaxy:
 ```
 
-Please do all the tests. If your group is confronted with difficulties, please let us know by either [submitting an issue](https://github.com/ibivu/B4TM-Galaxy-2017/issues/new) in this Github repo or talking to us.
+Please do all the tests. If your group is confronted with difficulties, please let us know.
 
