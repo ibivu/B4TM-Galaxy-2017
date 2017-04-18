@@ -26,29 +26,31 @@ Outside the practicals, you may submit your issues via [Github](https://github.c
 
 ### Setup
 
-Please create a user account in your Galaxy instance on the cloud. Each team has one account. Due to the expensive computation of the workflow and the limited cloud computation resources, each team should run one workflow collectively rather than individually.
+Please create a user account in your Galaxy instance on the cloud. Each team should have one account. Due to the expensive computation of the workflow and the limited cloud computation resources, for each team, we strongly suggest running one workflow collectively rather than individually.
 
 ### To-do list
 In this part, you are required to:
 1. import the workflow from the given Galaxy workflow file.
-2. run this workflow on the dataset given, using the parameters $\alpha=0.5$, $\lambda=0.3$, and FDR from  (May et al. 2016)
-3. visualise the output of workflow.
+2. finish the workflow using the existing tools in Galaxy by referring to [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf)
+3. test the workflow without running Heinz (the tool at the end of the workflow), because Heinz is really time-consuming.
+4. run this workflow on the dataset given, using the parameters $\alpha=0.7$, $\lambda=0.3$, and FDR from [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf)
+5. visualise the output of workflow.
 
-It may take more than 24 hours to run this workflow.
+It may take more than 24 hours to run this workflow because of Heinz.
 
 For this part, you need to hand in:
-1. a screenshot of the workflow.
-2. a visualisation of the workflow output.
+* 1.1 a screenshot of the workflow.
+* 1.2 a visualisation of the workflow output.
 
 ## Part 2: develop tools and a workflow for Galaxy
 
-Actually in the first part, we designate some random values for parameters  and , which will not make any sense.  and  come from BUM model [[2]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf), therefore we need to run this statistical model to approximate the parameters. However, in the current Galaxy workflow, there is no such a tool, you need to develop it.
+Actually in the first part, we just use some random values for parameters $\alpha$ and $\lambda$, making the result less interpretable. $\alpha$ and $\lambda$ come from BUM model [[2]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf), therefore we need to run this statistical model to approximate the parameters instead. However, in the current Galaxy workflow, there is no such a tool, we need to develop it and make it available in the Galaxy instance.
 
 ### Setup
 
-To set up a local Galaxy instance, [this document](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker) will handhold you through the procedure.
+To set up a local Galaxy instance, [this document](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker) will handhold you through the setup procedure.
 
-To save the troubles of registering an administrator account, you can log in to this Galaxy instance using 'admin@galaxy.org' as the account and ‘admin’ as the password.
+You need to register an account in this Galaxy instance and then make it the administrator ([how?](https://galaxyproject.org/admin/)) since you have the root access to the Galaxy server.
 
 ### To-do list
 
@@ -60,16 +62,17 @@ In this part, you are required to:
 5. run the workflow and visualise the output.
 
 For this part, you need to hand in:
-1. an XML file and the output file of BUM model.
-2. a screenshot of the new workflow.
-3. a visualisation of the workflow output.
+* 2.1 an XML file
+* 2.2 the output file of BUM model.
+* 2.3 a screenshot of the new workflow.
+* 2.4 a visualisation of the workflow output.
 
 ## Submit your assignment
 
-Please prepare everything into a PDF document, where you name, email, student No. should be clearly mentioned. The document should be structured and self-contained.
+Please prepare everything into a PDF document, where you name, email, student No. should be clearly mentioned. The document should be well-structured (using the ordinal numbers 1.1, 1.2, 2.1, etc)
 
 The whole XML file should appear in the document **in a code style with your code highlighted**.
 
 The file name of the document has to be ‘groupXX.pdf’ (e.g. group03.pdf).
 
-The document will be submitted via Blackboard by the end of **8 May 2017**
+The document should be submitted via Blackboard by the end of **8 May 2017**
