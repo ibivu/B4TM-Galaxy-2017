@@ -90,5 +90,20 @@ Or try the following command outside the Galaxy instance to reboot Galaxy withou
 $ docker exec b4tm2017 supervisorctl restart galaxy:
 ```
 
-Please do all the tests. If your group is confronted with difficulties, please let us know.
+**Please do all the tests. If your group is confronted with difficulties, please let us know.**
 
+### Common Docker commands
+
+#### Show the running containers
+```
+$ docker ps
+```
+#### Restart, stop and start the Galaxy container
+```
+$ docker restart b4tm2017
+
+$ docker stop b4tm2017
+
+$ docker start b4tm2017
+```
+`b4tm2017` can be replaced your own defined names or container ID, which can be retrieved by `$ docker ps --all`
