@@ -62,7 +62,7 @@ to type the username and password.
 
 `$ docker run -d -p 8888:80 --name b4tm2017 -v /your_directory/:/export/ docker.bioinformatician.science:5678/b4tm/local:0.1`
 
-In this command, we run this docker container in a detached mode, mapping the container port 80 to the port 8888 of localhost, naming this instance as 'b4tm2017' and mapping a container directory to a local one.
+In this command, we run this docker container in a detached mode (`-d`), mapping the container port 80 to the port 8888 of localhost (`-p`), naming this instance as 'b4tm2017' (`--name`) and mapping a container directory `/export/` to a local directory (`-v`). `/export/` is a special directory in the Galaxy container where all the configured files and tool files are kept. In this assignment, all the modifications and changes take place only in this folder. 
 
 Before running this command, please designate a path on your computer to replace `your_directory` in the command.
 For linux users, you might use `sudo` if your linux user account is not in the Docker group. 
@@ -84,7 +84,7 @@ Please try the following command inside Galaxy instance to reboot Galaxy without
 $ supervisorctl restart galaxy:
 ```
 
-Or try the following command outside the Galaxy instance to reboot Galaxy without rebooting the container (don’t forget the colon at the end)).
+Or try the following command outside the Galaxy instance to reboot Galaxy without rebooting the container (don’t forget the colon at the end).
 
 ```
 $ docker exec b4tm2017 supervisorctl restart galaxy:
@@ -107,3 +107,10 @@ $ docker stop b4tm2017
 $ docker start b4tm2017
 ```
 `b4tm2017` can be replaced your own defined names or container ID, which can be retrieved by `$ docker ps --all`
+
+### How to modify files in `/export/`
+
+There are two ways:
+
+1. The easiest way is to modify files in your won way in the local directory that is mapped to `/export/` in the container.
+2. Modify the files in the container directly. You need to log in to the Galaxy container as a root user by `$ docker exec -it b4tm2017 /bin/bash`, and then install an editor in the container, for example, you want to use 'Emacs', you can `$ apt-get update && apt-get install emacs`.
