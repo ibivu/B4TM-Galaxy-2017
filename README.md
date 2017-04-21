@@ -1,3 +1,5 @@
+
+<a href="url"><img src="https://galaxyproject.org/images/galaxy-logos/galaxy_project_logo.jpg" align="left" width="200" ></a>
 # Assignment Instruction
 
 In this group assignment, you will play and tweak with Galaxy workflows as both users and developers.
@@ -8,7 +10,7 @@ In the first part of the assignment, you will run a Galaxy workflow as end users
 
 ### Make a team
 
-You need to form your team by enrolling a group on [Blackboard](https:://bb.vu.nl). Each group consists of 2 students.
+You need to form your team by enrolling a group on [Blackboard](https:://bb.vu.nl). Each group consists of 2 people.
 
 ### Get the access to a Galaxy instance on the cloud
 
