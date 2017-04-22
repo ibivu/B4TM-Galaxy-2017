@@ -34,11 +34,18 @@ Please create a user account in your Galaxy instance on the cloud. Each team sho
 In this part, you are required to:
 1. import the workflow from the given Galaxy [workflow file](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/workflow.ga).
 2. finish the workflow using the existing tools in Galaxy by referring to [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf)
-3. test the workflow without running Heinz (the tool at the end of the workflow), because Heinz is really time-consuming.
+3. test the workflow.
 4. run this workflow on the dataset given, using the parameters $\alpha=0.7$, $\lambda=0.3$, and FDR from [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf)
 5. visualise the output of workflow (either by the given [script](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/graphviz.py) or in your own way).
 
-It probably takes more than 12 hours to run this workflow using the full dataset given, because running Heinz is time-consuming.
+It probably takes more than 12 hours to run this workflow using the full dataset given, due to the time-consuming Heinz.
+
+#### Test the workflow
+There is no point using the full dataset to test the workflow, because it is too time-consuming. Instead, you can try one
+of the following methods.
+1. Run the workflow without Heinz.
+2. Use a smaller dataset to run the whole workflow, you can pare down the output data of 'Calculate Heinz scores' by selecting
+the first 50 lines.
 
 For this part, you need to hand in:
 * 1.1 a screenshot of the workflow.
