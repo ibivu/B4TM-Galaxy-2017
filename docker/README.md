@@ -4,7 +4,7 @@ In this document, we will show you how to use the Galaxy docker image on your ow
 the forthcoming Galaxy assignment of B4TM.
 
 This assignment is a group assignment with a maximum of 2 persons in the group. This assignment lasts two weeks
-and in the second week, a local docker container is needed to finish the assignment. 
+and in the second week, a local docker container is needed to finish the assignment.
 
 Some of you might be confronted with difficulty in using docker image due to the factors like operating systems
 and stuff. If so, please let us know. If it is unsolvable, please consider choosing a collaborator who has no such problem to make a group.
@@ -12,7 +12,7 @@ and stuff. If so, please let us know. If it is unsolvable, please consider choos
 ## Install the latest version of Docker engine
 
 Docker is evolving quickly, to guarantee the best performance and least errors, we need to use the **latest**
-stable version of docker. 
+stable version of docker.
 
 ### Installation
 
@@ -25,17 +25,17 @@ stable version of docker.
 
  If you have a VUnet ID, you can log in to [SURFspot](https://www.surfspot.nl/) to get a free serial key of Windows
  10 Education version, with which you can replace your old serial key in your Windows 10 Home to upgrade it to education version.
- 
+
 ## Basics of using Docker
 
  If you were previously enrolled in the master course ‘Structural Bioinformatics’, you may have been familiar with
  Docker already, in this case, you may skip this section for the next. If you are new to Docker or want to
  review the usage of Docker quickly, you can read this document [here](https://docs.google.com/document/d/1QoL_93B-0VRcJdrxjweUV8JQI0Waehz1rMdiCFeWPeo/edit?usp=sharing).
- 
+
 ## Deploy Galaxy Docker Image
- 
+
 ### Log in to the docker registry for B4TM
- 
+
 #### What is a docker registry?
 Docker registry is probably synonymous with ‘docker repository’ or ‘docker hub’, a place to store and organize
 docker images. In most cases, we just pull a docker image from a public registry without being aware of the
@@ -62,17 +62,17 @@ to type the username and password.
 
 `$ docker run -d -p 8888:80 --name b4tm2017 -v /your_directory/:/export/ docker.bioinformatician.science:5678/b4tm/local:0.1`
 
-In this command, we run this docker container in a detached mode (`-d`), mapping the container port 80 to the port 8888 of localhost (`-p`), naming this instance as 'b4tm2017' (`--name`) and mapping a container directory `/export/` to a local directory (`-v`). `/export/` is a special directory in the Galaxy container where all the configured files and tool files are kept. In this assignment, all the modifications and changes take place only in this folder. 
+In this command, we run this docker container in a detached mode (`-d`), mapping the container port 80 to the port 8888 of localhost (`-p`), naming this instance as 'b4tm2017' (`--name`) and mapping a container directory `/export/` to a local directory (`-v`). `/export/` is a special directory in the Galaxy container where all the configured files and tool files are kept. In this assignment, all the modifications and changes take place only in this folder.
 
 Before running this command, please designate a path on your computer to replace `your_directory` in the command.
-For linux users, you might use `sudo` if your linux user account is not in the Docker group. 
+For linux users, you might use `sudo` if your linux user account is not in the Docker group.
 
 ### Test the instance
 
 #### Test it in the Internet browser
 
 Please visit the URL http://127.0.0.1:8888 to test whether Galaxy is accessible on your computer now
-(it might take a few minutes after executing the docker command above). 
+(it might take a few minutes after executing the docker command above).
 
 #### Test it in Docker
 
@@ -112,5 +112,5 @@ $ docker start b4tm2017
 
 There are two ways:
 
-1. The easiest way is to modify files in your won way in the local directory that is mapped to `/export/` in the container.
-2. Modify the files in the container directly. You need to log in to the Galaxy container as a root user by `$ docker exec -it b4tm2017 /bin/bash`, and then install an editor in the container, for example, you want to use 'Emacs', you can `$ apt-get update && apt-get install emacs`.
+1. The easiest way is to modify files in your own way in the local directory that is mapped to `/export/` in the container.
+2. Modify the files in the container directly. You need to log in to the Galaxy container as a root user by `$ docker exec -it b4tm2017 /bin/bash`, and then install an editor in the container, for example, if you want to use 'Emacs', you can `$ apt-get update && apt-get install emacs`.
