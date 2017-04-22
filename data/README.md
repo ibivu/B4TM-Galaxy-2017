@@ -11,4 +11,4 @@ to [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/metaModule
 In Galaxy, multiple files can be organized into a single dataset list, which
 can be used as the single input for some Galaxy tools. In this assignment, you
 probably need this.
-![Here show how to operate](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/.github/1.png)
+![Here show how to operate](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/.github/1.png)
