@@ -14,7 +14,7 @@ You need to form your team by enrolling a group on [Blackboard](https:://bb.vu.n
 
 ### Get the access to a Galaxy instance on the cloud
 
-There are two Galaxy instances running on the cloud. Please click here to sign up one of the instances for your team (each team has one account).
+There are two Galaxy instances running on the cloud. Please click [here](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/galaxy/README.md) to get the Galaxy server for your team (each team has one account).
 
 ### Prepare Docker and stuff
 
