@@ -1,5 +1,5 @@
 
-<a href="url"><img src="https://galaxyproject.org/images/galaxy-logos/galaxy_project_logo.jpg" align="left" width="200" ></a>
+<a href="https://galaxyproject.org/"><img src="https://galaxyproject.org/images/galaxy-logos/galaxy_project_logo.jpg" align="left" width="200" ></a>
 # Assignment Instruction
 
 In this group assignment, you will play and tweak with Galaxy workflows as both users and developers.
@@ -19,6 +19,10 @@ There are two Galaxy instances running on the cloud. Please click here to sign u
 ### Prepare Docker and stuff
 
 Please refer to [this](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker), which will guide you through the preparation.
+
+### Read all the documents in this Github repo
+
+We have covered as many answers to the questions you might be confronted with as possible in these documents. Therefore, before posing questions, please look them up in these documents to check whether they have been answered or not. 
 
 ## Part 1: run a workflow in Galaxy
 
