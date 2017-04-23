@@ -6,6 +6,8 @@ In this group assignment, you will play and tweak with Galaxy workflows as both 
 
 In the first part of the assignment, you will run a Galaxy workflow as end users by importing, editing a workflow and tweaking its parameters; in the second part, as developers and administrators of Galaxy, you will develop a new Galaxy tool, install and modify another tool and create a workflow. After finishing this assignment, you will be familiar with Galaxy from different perspectives.
 
+**In the year of 2017, the assignment starts from 25 Apr and lasts until 8 May.**
+
 ## Before starting your assignment
 
 ### Make a team
