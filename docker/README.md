@@ -62,16 +62,20 @@ to type the username and password.
 
 `$ docker run -d -p 8888:80 --name b4tm2017 -v /your_directory/:/export/ docker.bioinformatician.science:5678/b4tm/local:0.1`
 
-In this command, we run this docker container in a detached mode (`-d`), mapping the container port 80 to the port 8888 of localhost (`-p`), naming this instance as 'b4tm2017' (`--name`) and mapping a container directory `/export/` to a local directory (`-v`). `/export/` is a special directory in the Galaxy container where all the configured files and tool files are kept. In this assignment, all the modifications and changes take place only in this folder.
+In this command, we run this docker container in a detached mode (`-d`), mapping the container port 80 to the port 8888 of localhost (`-p`), naming this instance as 'b4tm2017' (`--name`) and mapping a container directory `/export/` to a local (host) directory (`-v`). `/export/` is a special directory in the Galaxy container where all the configured files and tool files are kept. In this assignment, all the modifications and changes take place only in this folder.
 
 Before running this command, please designate a path on your computer to replace `your_directory` in the command.
 For linux users, you might use `sudo` if your linux user account is not in the Docker group.
+
+**For Windows 10 Users**, please use the following command instead because mapping directories between host and container seems to be incompatible with Windows.
+
+`$ docker run -d -p 8888:80 --name b4tm2017 docker.bioinformatician.science:5678/b4tm/local:0.1`
 
 ### Test the instance
 
 #### Test it in the Internet browser
 
-Please visit the URL http://127.0.0.1:8888 to test whether Galaxy is accessible on your computer now
+Please visit the URL http://127.0.0.1:8888 (or http://localhost:8888) to test whether Galaxy is accessible on your computer now
 (it might take a few minutes after executing the docker command above).
 
 #### Test it in Docker
@@ -113,4 +117,4 @@ $ docker start b4tm2017
 There are two ways:
 
 1. The easiest way is to modify files in your own way in the local directory that is mapped to `/export/` in the container.
-2. Modify the files in the container directly. You need to log in to the Galaxy container as a root user by `$ docker exec -it b4tm2017 /bin/bash`, and then install an editor in the container, for example, if you want to use 'Emacs', you can `$ apt-get update && apt-get install emacs`.
+2. Modify the files in the container directly (probably helpful for Windows users). You need to log in to the Galaxy container as a root user by `$ docker exec -it b4tm2017 /bin/bash`, and then install an editor in the container, for example, if you want to use 'Emacs', you can `$ apt-get update && apt-get install emacs`.
