@@ -27,6 +27,10 @@ Please refer to [this](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/doc
 
 We have covered as many answers to the questions you might be confronted with as possible in these documents. Therefore, before posing questions, please look them up in these documents to check whether they have been answered or not.
 
+### Tips
+
+When you start running a job, an item will be immediately created in 'History'. You can monitor the progress of the job in 'History'. You might notice that the job has been in the state ***'This job is waiting to run'*** for a long time. In this case, please just wait for a while, because Galaxy is installing the dependencies of the Galaxy tool on your first use. **Never cancel the job** ('cancel' means deleting this item in 'History'), or else you will screw up the installation of dependencies rendering the tool useless (Fixing it is not an easy thing). 
+
 ## Part 1: run a workflow in Galaxy
 
 ### Setup
