@@ -14,11 +14,6 @@ In the first part of the assignment, you will run a Galaxy workflow as end users
 
 You need to form your team by enrolling a group on [Blackboard](https:://bb.vu.nl). Each group consists of 2 people.
 
-### Get the access to a Galaxy instance on the cloud
-
-There are two Galaxy servers running on the cloud. Please click [here](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/galaxy/README.md) to get the Galaxy server for your team and create an account on that server
-(each group has one account).
-
 ### Prepare Docker and stuff
 
 Please refer to [this](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker), which will guide you through the preparation.
@@ -31,7 +26,10 @@ We have covered as many answers to the questions you might be confronted with as
 
 ### Setup
 
-This part will be done on the Galaxy server, and don't forget to log in to it. Due to the expensive computation of the workflow and the limited cloud computation resources, for each team, we strongly suggest running one workflow collectively rather than individually.
+This part will be done on **Galaxy Instance 1**. Please refer to [this document](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker) for setting
+it up.
+
+You need to register an account in this Galaxy instance before continuing the assignment.
 
 ### To-do list
 In this part, you are required to:
@@ -44,8 +42,7 @@ In this part, you are required to:
 It probably takes more than 12 hours to run this workflow using the full dataset given, due to the time-consuming Heinz.
 
 #### Test the workflow
-There is no point using the full dataset to test the workflow, because it is too time-consuming. Instead, you can try one
-of the following methods.
+There is no point using the full dataset to test the workflow, because it is too time-consuming. Instead, you can try one of the following methods.
 1. Run the workflow without Heinz.
 2. Use a smaller dataset to run the whole workflow, you can pare down the output data of 'Calculate Heinz scores' by selecting
 the first 100 lines using the existing Galaxy tools, for example.
@@ -60,7 +57,8 @@ Actually in the first part, we just used some random values for parameters $\alp
 
 ### Setup
 
-To set up a local Galaxy instance, [this document](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker) will guide you through the setup procedure.
+This part will be done on **Galaxy Instance 2**. Please refer to [this document](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker) for setting
+it up.
 
 You need to register an account in this Galaxy instance and then make it the administrator ([how?](https://galaxyproject.org/admin/)).
 
