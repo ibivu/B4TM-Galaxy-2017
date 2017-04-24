@@ -114,7 +114,8 @@ $ docker start b4tm2017
 
 ### How to modify files in `/export/`
 
-There are two ways:
+There are a few ways:
 
 1. The easiest way is to modify files in your own way in the local directory that is mapped to `/export/` in the container.
 2. Modify the files in the container directly (probably helpful for Windows users). You need to log in to the Galaxy container as a root user by `$ docker exec -it b4tm2017 /bin/bash`, and then install an editor in the container, for example, if you want to use 'Emacs', you can `$ apt-get update && apt-get install emacs`.
+3. Create, modify and change files locally and then transfer the new files by the command `$ docker cp /path/to/local/file container_name:/path/to/target/dir/`, more usage please refer to [here](https://docs.docker.com/engine/reference/commandline/cp/)
