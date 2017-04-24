@@ -25,7 +25,7 @@ Please refer to [this](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/doc
 
 ### Read all the documents in this Github repo
 
-We have covered as many answers to the questions you might be confronted with as possible in these documents. Therefore, before posing questions, please look them up in these documents to check whether they have been answered or not. 
+We have covered as many answers to the questions you might be confronted with as possible in these documents. Therefore, before posing questions, please look them up in these documents to check whether they have been answered or not.
 
 ## Part 1: run a workflow in Galaxy
 
@@ -48,7 +48,7 @@ There is no point using the full dataset to test the workflow, because it is too
 of the following methods.
 1. Run the workflow without Heinz.
 2. Use a smaller dataset to run the whole workflow, you can pare down the output data of 'Calculate Heinz scores' by selecting
-the first 50 lines.
+the first 100 lines using the existing Galaxy tools, for example.
 
 For this part, you need to hand in:
 * 1.1 a screenshot of the workflow.
