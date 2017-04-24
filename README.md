@@ -16,7 +16,8 @@ You need to form your team by enrolling a group on [Blackboard](https:://bb.vu.n
 
 ### Get the access to a Galaxy instance on the cloud
 
-There are two Galaxy instances running on the cloud. Please click [here](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/galaxy/README.md) to get the Galaxy server for your team (each team has one account).
+There are two Galaxy servers running on the cloud. Please click [here](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/galaxy/README.md) to get the Galaxy server for your team and create an account on that server
+(each group has one account).
 
 ### Prepare Docker and stuff
 
@@ -30,7 +31,7 @@ We have covered as many answers to the questions you might be confronted with as
 
 ### Setup
 
-Please create a user account in your Galaxy instance on the cloud. Each team should have one account. Due to the expensive computation of the workflow and the limited cloud computation resources, for each team, we strongly suggest running one workflow collectively rather than individually.
+This part will be done on the Galaxy server, and don't forget to log in to it. Due to the expensive computation of the workflow and the limited cloud computation resources, for each team, we strongly suggest running one workflow collectively rather than individually.
 
 ### To-do list
 In this part, you are required to:
