@@ -42,7 +42,7 @@ In this part, you are required to:
 1. import the workflow from the given Galaxy [workflow file](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/workflow.ga).
 2. finish the workflow using the existing tools in Galaxy by referring to [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf)
 3. test the workflow.
-4. run this workflow on the dataset given, using the parameters $\alpha=0.7$, $\lambda=0.3$, and FDR from [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf)
+4. run this workflow on the dataset given, using the parameters $\alpha=0.612345$, $\lambda=0.435674$, and FDR from [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf)
 5. visualise the output of workflow (either by the given [script](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/graphviz.py) or in your own way).
 
 It probably takes more than 12 hours to run this workflow using the full dataset given, due to the time-consuming Heinz.
