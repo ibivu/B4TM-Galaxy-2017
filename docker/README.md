@@ -1,7 +1,7 @@
 # Use Docker for Galaxy Assignment
 
 In this document, we will show you how to use the Galaxy docker image on your own computer as the preparation for
-the forthcoming Galaxy assignment of B4TM.
+the forthcoming Galaxy assignment of B4TM. Please do this part in the first practical of the assignment period (25 Apr 2017).
 
 This assignment is a group assignment with a maximum of 2 persons in the group. This assignment lasts two weeks
 and in the second week, a local docker container is needed to finish the assignment.
