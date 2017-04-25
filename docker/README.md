@@ -63,13 +63,13 @@ to type the username and password.
 There are two Galaxy instances you need to create, which are from two different
 Docker images separately.
 
-#### Galaxy Instance 1
+#### Galaxy Instance 1 - on port 8880
 
 `$ docker run -d -p 8880:80 --name b4tm docker.bioinformatician.science:5678/b4tm/cloud:0.1`
 
 Then you can access Galaxy by the URL http://127.0.0.1:8880 (or http://localhost:8880)
 
-#### Galaxy Instance 2
+#### Galaxy Instance 2 - on port 8888
 
 `$ docker run -d -p 8888:80 --name b4tm2017 -v /your_directory/:/export/ docker.bioinformatician.science:5678/b4tm/local:0.1`
 
