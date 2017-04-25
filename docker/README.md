@@ -1,7 +1,7 @@
 # Use Docker for Galaxy Assignment
 
 In this document, we will show you how to use the Galaxy docker image on your own computer as the preparation for
-the forthcoming Galaxy assignment of B4TM.
+the forthcoming Galaxy assignment of B4TM. Please do this part in the first practical of the assignment period (25 Apr 2017).
 
 This assignment is a group assignment with a maximum of 2 persons in the group. This assignment lasts two weeks
 and in the second week, a local docker container is needed to finish the assignment.
@@ -60,7 +60,20 @@ to type the username and password.
 
 ### Create and run a Galaxy instance from the image
 
+There are two Galaxy instances you need to create, which are from two different
+Docker images separately.
+
+#### Galaxy Instance 1
+
+`$ docker run -d -p 8880:80 --name b4tm docker.bioinformatician.science:5678/b4tm/cloud:0.1`
+
+Then you can access Galaxy by the URL http://127.0.0.1:8880 (or http://localhost:8880)
+
+#### Galaxy Instance 2
+
 `$ docker run -d -p 8888:80 --name b4tm2017 -v /your_directory/:/export/ docker.bioinformatician.science:5678/b4tm/local:0.1`
+
+Then you can access Galaxy by the URL http://127.0.0.1:8888 (or http://localhost:8888) 
 
 In this command, we run this docker container in a detached mode (`-d`), mapping the container port 80 to the port 8888 of localhost (`-p`), naming this instance as 'b4tm2017' (`--name`) and mapping a container directory `/export/` to a local (host) directory (`-v`). `/export/` is a special directory in the Galaxy container where all the configured files and tool files are kept. In this assignment, all the modifications and changes take place only in this folder.
 
@@ -71,7 +84,7 @@ For linux users, you might use `sudo` if your linux user account is not in the D
 
 `$ docker run -d -p 8888:80 --name b4tm2017 docker.bioinformatician.science:5678/b4tm/local:0.1`
 
-### Test the instance
+### Test Galaxy Instance 2
 
 #### Test it in the Internet browser
 

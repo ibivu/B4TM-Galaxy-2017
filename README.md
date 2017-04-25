@@ -14,11 +14,6 @@ In the first part of the assignment, you will run a Galaxy workflow as end users
 
 You need to form your team by enrolling a group on [Blackboard](https:://bb.vu.nl). Each group consists of 2 people.
 
-### Get the access to a Galaxy instance on the cloud
-
-There are two Galaxy servers running on the cloud. Please click [here](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/galaxy/README.md) to get the Galaxy server for your team and create an account on that server
-(each group has one account).
-
 ### Prepare Docker and stuff
 
 Please refer to [this](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker), which will guide you through the preparation.
@@ -35,7 +30,10 @@ When you start running a job, an item will be immediately created in 'History'. 
 
 ### Setup
 
-This part will be done on the Galaxy server, and don't forget to log in to it. Due to the expensive computation of the workflow and the limited cloud computation resources, for each team, we strongly suggest running one workflow collectively rather than individually.
+This part will be done on **Galaxy Instance 1**. Please refer to [this document](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker) for setting
+it up.
+
+You need to register an account in this Galaxy instance before continuing the assignment.
 
 ### To-do list
 In this part, you are required to:
@@ -48,8 +46,7 @@ In this part, you are required to:
 It probably takes more than 12 hours to run this workflow using the full dataset given, due to the time-consuming Heinz.
 
 #### Test the workflow
-There is no point using the full dataset to test the workflow, because it is too time-consuming. Instead, you can try one
-of the following methods.
+There is no point using the full dataset to test the workflow, because it is too time-consuming. Instead, you can try one of the following methods.
 1. Run the workflow without Heinz.
 2. Use a smaller dataset to run the whole workflow, you can pare down the output data of 'Calculate Heinz scores' by selecting
 the first 100 lines using the existing Galaxy tools, for example.
@@ -64,7 +61,9 @@ Actually in the first part, we just used some random values for parameters $\alp
 
 ### Setup
 
-To set up a local Galaxy instance, [this document](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker) will guide you through the setup procedure.
+This part will be done on **Galaxy Instance 2**. Please refer to [this document](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker) for setting it up. 
+
+**This part will be probably done in a cloud VM, more details to follow shortly.**
 
 You need to register an account in this Galaxy instance and then make it the administrator ([how?](https://galaxyproject.org/admin/)).
 
@@ -74,7 +73,9 @@ Hereafter, the default home directory in this document `/export` in the docker c
 
 In this part, you are required to:
 1. log in to the Galaxy instance and install DESeq2 ([iuc](https://github.com/galaxyproject/tools-iuc)).
-2. replace DESeq R script (deseq2.R) in the folder `shed_tools` with the [bespoke one](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/deseq2.R) provided ([why?](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/scripts)).
+2. replace DESeq R script (deseq2.R) in the folder `shed_tools` with the [bespoke one](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/deseq2.R) provided ([why?](https://github.com/ibivu/B4TM-GaActually in the first part, we just used some random values for parameters $\alpha$ and $\lambda$, making the result less interpretable. $\alpha$ and $\lambda$ should come from BUM model [2], therefore we need to run this statistical model to approximate the parameters instead. However, in the current Galaxy workflow, there is no such a tool, we need to develop it and make it available in the Galaxy instance you are working on.
+
+laxy-2017/tree/master/scripts)).
 3. finish the Galaxy tool of BUM model (xml file) in the folder `galaxy-central/tools/bionet`.
 4. recreate a workflow that can be run automatically from the beginning to the end.
 5. run the workflow and visualise the output.
