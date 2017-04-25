@@ -73,9 +73,7 @@ Hereafter, the default home directory in this document `/export` in the docker c
 
 In this part, you are required to:
 1. log in to the Galaxy instance and install DESeq2 ([iuc](https://github.com/galaxyproject/tools-iuc)).
-2. replace DESeq R script (deseq2.R) in the folder `shed_tools` with the [bespoke one](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/deseq2.R) provided ([why?](https://github.com/ibivu/B4TM-GaActually in the first part, we just used some random values for parameters $\alpha$ and $\lambda$, making the result less interpretable. $\alpha$ and $\lambda$ should come from BUM model [2], therefore we need to run this statistical model to approximate the parameters instead. However, in the current Galaxy workflow, there is no such a tool, we need to develop it and make it available in the Galaxy instance you are working on.
-
-laxy-2017/tree/master/scripts)).
+2. replace DESeq R script (deseq2.R) in the folder `shed_tools` with the [bespoke one](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/deseq2.R) provided ([why?](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/scripts)).
 3. finish the Galaxy tool of BUM model (xml file) in the folder `galaxy-central/tools/bionet`.
 4. recreate a workflow that can be run automatically from the beginning to the end.
 5. run the workflow and visualise the output.
