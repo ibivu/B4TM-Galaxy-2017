@@ -37,16 +37,16 @@ You need to register an account in this Galaxy instance before continuing the as
 
 ### To-do list
 In this part, you are required to:
-1. import the workflow from the given Galaxy [workflow file](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/workflow.ga).
-2. finish the workflow using the existing tools in Galaxy by referring to [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf)
+1. import the workflow from the given Galaxy [workflow file](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/workflow.ga). Note that you need to download the file from Github (do not use the URL directly for import).
+2. finish the workflow using the existing tools in Galaxy. Note that further details un this workflow can be found in Ref. [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf)
 3. test the workflow.
 4. run this workflow on the dataset given, using the parameters $\alpha=0.612345$, $\lambda=0.435674$, and FDR from [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf)
 5. visualise the output of workflow (either by the given [script](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/graphviz.py) or in your own way).
 
-It probably takes more than 12 hours to run this workflow using the full dataset given, due to the time-consuming Heinz.
+It probably takes about 15 minutes to run this workflow using the full dataset given. Note that with different setting, Heinz can take a long time (>12 hours) to run.
 
 #### Test the workflow
-There is no point using the full dataset to test the workflow, because it is too time-consuming. Instead, you can try one of the following methods.
+There is no point using the full dataset to test the workflow, because it is time-consuming. Instead, you can try one of the following methods.
 1. Run the workflow without Heinz.
 2. Use a smaller dataset to run the whole workflow, you can pare down the output data of 'Calculate Heinz scores' by selecting
 the first 100 lines using the existing Galaxy tools, for example.
