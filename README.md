@@ -31,7 +31,7 @@ When you start running a job, an item will be immediately created in 'History'. 
 ### Setup
 
 This part will be done on **Galaxy Instance 1**. Please refer to [this document](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker) for setting
-it up.
+it up. Alternatively, you can use a Galaxy server running at SurfSara for this part of the assignment; please refer to the [galaxy server instructions](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/galaxy).
 
 You need to register an account in this Galaxy instance before continuing the assignment.
 
@@ -61,9 +61,8 @@ Actually in the first part, we just used some random values for parameters $\alp
 
 ### Setup
 
-This part will be done on **Galaxy Instance 2**. Please refer to [this document](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker) for setting it up. 
+This part will be done on **Galaxy Instance 2**. Please refer to [this document](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/docker) for setting it up.  If you do not have access to a docker environment on at least one device in your group, please contact us: we can provide you with a small VM to perform the development part of the assignment.
 
-**This part will be probably done in a cloud VM, more details to follow shortly.**
 
 You need to register an account in this Galaxy instance and then make it the administrator ([how?](https://galaxyproject.org/admin/)).
 
@@ -78,11 +77,16 @@ In this part, you are required to:
 4. recreate a workflow that can be run automatically from the beginning to the end.
 5. run the workflow and visualise the output.
 
+Note that the last Heinz step can take a very long time. If you do not want to run this last step on your own latop for the full data set you can use a Galaxy server at SurfSara. Please refer to the [galaxy server instructions](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/galaxy).
+
+
+
 For this part, you need to hand in:
 * 2.1 an XML file
 * 2.2 the output file of BUM model.
 * 2.3 a screenshot of the new workflow.
 * 2.4 a visualisation of the workflow output.
+
 
 ## Submit your assignment
 
