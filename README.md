@@ -83,17 +83,19 @@ Note that the last Heinz step can take a very long time. If you do not want to r
 
 For this part, you need to hand in:
 * 2.1 an XML file
-* 2.2 the output file of BUM model.
+* 2.2 the output file of BUM model Galaxy tool.
 * 2.3 a screenshot of the new workflow.
 * 2.4 a visualisation of the workflow output.
 
 
 ## Submit your assignment
 
-Please prepare everything into a PDF document, where you name, email, student No. should be clearly mentioned. The document should be well-structured (using the ordinal numbers 1.1, 1.2, 2.1, etc)
+Please prepare everything (except output file of BUM model Galaxy tool) into a PDF document, where you name, email, student No. should be clearly mentioned. The document should be well-structured (using the ordinal numbers 1.1, 1.2, 2.1, etc)
 
 The whole XML file should appear in the document **in a code style with your code highlighted**.
 
 The file name of the document has to be ‘groupXX.pdf’ (e.g. group03.pdf).
 
-The document should be submitted via Blackboard by the end of **8 May 2017**
+Please don't rename the output file of BUM model Galaxy tool (just leave it as it is).
+
+The document and the output file need to be submitted via Blackboard by the end of **8 May 2017**
