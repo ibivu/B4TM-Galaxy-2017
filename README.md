@@ -38,9 +38,9 @@ You need to register an account in this Galaxy instance before continuing the as
 ### To-do list
 In this part, you are required to:
 1. import the workflow from the given Galaxy [workflow file](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/workflow.ga). Note that you need to download the file from Github (do not use the URL directly for import).
-2. finish the workflow using the existing tools in Galaxy. Note that further details un this workflow can be found in Ref. [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf)
+2. finish the workflow using the existing tools in Galaxy. Note that further details un this workflow can be found in Ref. [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/metaModules.pdf) Hint: **p-value** not adjust p-value should be used.
 3. test the workflow.
-4. run this workflow on the dataset given, using the parameters $\alpha=0.612345$, $\lambda=0.435674$, and FDR from [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/Heinz.pdf)
+4. run this workflow on the dataset given, using the parameters $\alpha=0.612345$, $\lambda=0.435674$, and FDR from [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/papers/metaModules.pdf)(in its result section)
 5. visualise the output of workflow (either by the given [script](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/graphviz.py) or in your own way).
 
 It probably takes about 15 minutes to run this workflow using the full dataset given. Note that with different setting, Heinz can take a long time (>12 hours) to run.
