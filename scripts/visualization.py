@@ -19,7 +19,7 @@ For more information on this course, please visit https://goo.gl/ggXp12
 """
 
 # Author: Cico Zhang
-# Date: 17 Mar 2017
+# Date: 1 May 2017
 
 from graphviz import Source
 import argparse
@@ -38,8 +38,13 @@ args = parser.parse_args()
 if args.heinz is None:
     sys.exit('Input file must be designated.')
 
+# Read the whole output file
 with open(args.heinz) as r:
     graph_dot = r.readlines()
+
+# Remove the redundant lines
+while not graph_dot[0].startswith('graph G {'):
+    graph_dot.pop(0)
 
 src = Source(''.join(graph_dot))
 src.render(args.output, cleanup=True)
