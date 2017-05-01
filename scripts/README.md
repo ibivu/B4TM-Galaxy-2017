@@ -9,7 +9,7 @@ required in metaModule. Therefore, we provide a bespoke version to enable this f
 
 ## visualization.py (The renamed version of graphviz.py)
 
-** We have renamed the script to `visualization.py`, due to the naming conflicts, which probably stops you from running the script. **
+**We have renamed the script to `visualization.py`, due to the naming conflicts, which probably stops you from running the script.**
 
 You may use this Python script to visualise the output of Heinz (the final output of the workflow). This script can only run
 in Python 3.5+ and you need to solve the Python package dependencies. Alternatively, you can look for your own solution to
