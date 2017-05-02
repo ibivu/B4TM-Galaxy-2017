@@ -28,3 +28,9 @@ You can try eXamine plugin from [[1]](https://github.com/ibivu/B4TM-Galaxy-2017/
 ## workflow.ga
 
 The workflow file you need in the first part of the assignment.
+
+## deseq2 (a directory)
+
+This directory contains all the files of Deseq2 Galaxy tool.
+
+Copy the whole folder `deseq2` here into `/galaxy-central/tools` into the container of Galaxy Instance 2, by preferably using the command `docker cp deseq2 b4tm2017:/galaxy-central/tools`, then modify `/export/galaxy-central/config/tool_conf.xml` by adding `<tool file="deseq2/deseq2.xml" />` to any section you like, then restart Galaxy.
