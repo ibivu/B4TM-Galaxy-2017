@@ -5,7 +5,7 @@ This directory stores all the scripts and files you will use in this assignment.
 ## deseq2.R
 
 In the official version of DESeq2 Galaxy tool, filtering the low-quality KOs by 'baseMean' is not supported, which however is
-required in metaModule. Therefore, we provide a bespoke version to enable this function.
+required in metaModule. Therefore, we provide a bespoke version to enable this function. This file is the same with that in the folder `deseq2`
 
 ## visualization.py (The renamed version of graphviz.py)
 
