@@ -24,7 +24,7 @@ The solution is editing bum.xml in or transferring the modified one to the folde
 ### DESeq2 problem
 After the installation of Version 5 of DESeq2 Galaxy tool, ‘deseq2.R’ does not appear. It is probably a bug in Galaxy toolshed in installing the older version of DESeq2. The expected behavior is that we can install any available version of DESeq2 from Galaxy toolshed. To fix it, we provide a few solutions:
 1. Install DESeq2 locally instead of from toolshed. [how?](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/README.md#deseq2-a-directory)
-2. Alternatively, you may recreate a new Galaxy instance for Part 2 using a newer version of Docker image: `docker.bioinformatician.science:5678/b4tm/local:0.2`, which has preinstalled DESeq2.
+2. Alternatively, you may recreate a new Galaxy instance for Part 2 using a newer version of Docker image: `docker.bioinformatician.science:5678/b4tm/local:0.2`, which has preinstalled DESeq2 (replacement is done, so you can use DESeq2 directly).
 3. Alternatively again, you may still use `docker.bioinformatician.science:5678/b4tm/local:0.1` to recreate a new Galaxy instance for Part 2, just install Version 9 of Deseq2 and then replace ‘deseq2.R’ with the one in https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/scripts/, for this operation, you don’t need to restart Galaxy. The result of Version 9 has been tested on 2nd May, it is the same with Version 5’s.
 
 ## Before starting your assignment
