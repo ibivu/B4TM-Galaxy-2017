@@ -15,6 +15,8 @@ Group 1,3,5,7 ... should use Server A
 
 Group 2,4,6,8 ... should use Server B
 
+**Please download your result in time, because the servers will keep running until 10th May 2017.**
+
 ## How to run Heinz on Galaxy cloud instance
 
 1. Download the input data of Heinz from your local Galaxy instance.
