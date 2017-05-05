@@ -90,7 +90,7 @@ You need to register an account in this Galaxy instance and then make it the adm
 In this part, you are required to:
 1. log in to the Galaxy instance and install DESeq2 ([iuc](https://github.com/galaxyproject/tools-iuc))(**Please read [this](#deseq2-problem) first**).
 2. replace DESeq R script (deseq2.R) in the folder `/export/shed_tools` with the [bespoke one](https://github.com/ibivu/B4TM-Galaxy-2017/blob/master/scripts/deseq2.R) provided ([why?](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/scripts))(**Please read [this](#deseq2-problem) first**).
-3. finish the Galaxy tool of BUM model (xml file) in the container folder `/galaxy-central/tools/bionet` and edit `/export/galaxy-central/config/tool_conf.xml` to make this tool visible. The tool will take effects after rebooting the Galxay instance.
+3. finish the Galaxy tool of BUM model (xml file) in the container folder `/galaxy-central/tools/bionet` and edit `/export/galaxy-central/config/tool_conf.xml` to make this tool visible. The tool will take effects after rebooting the Galxay instance. (Hint: you probably need refer to `galaxy-central/tools/scoring/heinz-scoring.xml` or other xml files. `$__tool_directory__` is a system variable representing the directory containing the scripts to evoke.)
 4. recreate a workflow that can be run automatically from the beginning to the end.
 5. run the workflow and visualise the output.
 
