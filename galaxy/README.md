@@ -8,8 +8,8 @@ A [Galaxy Instance 1](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/dock
 
 Name     | URL                                   | Group No.
 :------: | :-----------------------------------: |:-----:
-Server A |galaxy-a.bioinformatician.science:8880 | odd numbers
-Server B |galaxy-b.bioinformatician.science:8880 | even numbers
+Server A |http://galaxy-a.bioinformatician.science:8880 | odd numbers
+Server B |http://galaxy-b.bioinformatician.science:8880 | even numbers
 
 Group 1,3,5,7 ... should use Server A
 
