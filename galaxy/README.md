@@ -6,16 +6,18 @@ A [Galaxy Instance 1](https://github.com/ibivu/B4TM-Galaxy-2017/tree/master/dock
 
 ## Galaxy cloud instance list
 
-Name     | URL                                   | Group No.
-:------: | :-----------------------------------: |:-----:
-Server A |http://galaxy-a.bioinformatician.science:8880 | odd numbers
-Server B |http://galaxy-b.bioinformatician.science:8880 | even numbers
+Name     | URL                                   | Group No. | Status
+:------: | :-----------------------------------: |:-----: | :-----:
+Server A |http://galaxy-a.bioinformatician.science:8880 | odd numbers | Running until 19 May
+Server B |http://galaxy-b.bioinformatician.science:8880 | even numbers | Permanently closed
 
 Group 1,3,5,7 ... should use Server A
 
 Group 2,4,6,8 ... should use Server B
 
 **Please download your result in time, because the servers will keep running until 10th May 2017.**
+
+**Update on 11 May: Server B has been permanently closed, Server A has been scaled down and will be kept running until May.19.**
 
 ## How to run Heinz on Galaxy cloud instance
 
